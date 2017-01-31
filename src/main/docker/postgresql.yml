@@ -1,0 +1,12 @@
+version: '2'
+services:
+    quintaneros-postgresql:
+        container_name: quintaneros-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/Quintaneros/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=Quintaneros
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
